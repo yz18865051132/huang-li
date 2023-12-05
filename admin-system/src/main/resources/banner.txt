@@ -1,0 +1,13 @@
+${AnsiColor.BRIGHT_BLUE}
+
+db   db db      d888888b        db    db db    db d88888D db    db d8b   db 
+88   88 88        `88'          `8b  d8' 88    88 YP  d8' 88    88 888o  88 
+88ooo88 88         88            `8bd8'  88    88    d8'  88    88 88V8o 88 
+88~~~88 88         88    C8888D    88    88    88   d8'   88    88 88 V8o88 
+88   88 88booo.   .88.             88    88b  d88  d8' db 88b  d88 88  V888 
+YP   YP Y88888P Y888888P           YP    ~Y8888P' d88888P ~Y8888P' VP   V8P 
+
+${AnsiColor.BRIGHT_GREEN}
+YU  ZUN Version: 1.0.0
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
+${AnsiColor.BLACK}

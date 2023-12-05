@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hli.modules.user.mapper.HliStaffMapper">
+
+    <resultMap id="BaseResultMap" type="com.hli.modules.user.entity.HliStaff">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="empName" column="emp_name" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="daptName" column="dapt_name" jdbcType="VARCHAR"/>
+            <result property="empDegreeName" column="emp_degree_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,emp_name,sex,
+        age,dapt_name,emp_degree_name
+    </sql>
+    <select id="selectOneByAge" resultType="com.hli.modules.user.entity.HliStaff">
+        select * from hli_staff where emp_name =${hliStaff.empName}
+    </select>
+</mapper>
